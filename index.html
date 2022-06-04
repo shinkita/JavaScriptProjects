@@ -1,0 +1,42 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>
+Color Flipper Program In Javascript
+</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div style="width:100%" id="wrapper">
+<div id="wrapper_content">
+<h2>Color Flipper</h2>
+<!--<button onclick=""> Click me through AddListener method</button> -->
+<button onclick="colorflipper()"> Click me</button>
+
+<a href="#" id="Color_Flip">Click me here through EventListener</a>
+</div>
+</div>
+</body>
+
+
+
+<script>
+let colors = ["red","blue","green","pink"];
+document.getElementById("Color_Flip").addEventListener("click", function(){
+
+const randomnumber =getrendomnumber();
+document.getElementById("wrapper_content").style.backgroundColor = colors[randomnumber];
+}
+
+
+);
+
+
+//document.getElementById("Color_Flip").onclick =function(){colorflipper()};
+function getrendomnumber(){
+
+return Math.floor(Math.random()*colors.length);
+}
+
+</script>
+</html>

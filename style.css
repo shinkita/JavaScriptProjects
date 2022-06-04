@@ -1,0 +1,18 @@
+
+#wrapper{
+
+width:100%;
+
+}
+#wrapper_content
+  {
+   
+   margin:auto;
+   color:#000;
+   border:1px solid #8973hd;
+   background-color:red;
+   height:700px;
+   text-align:center;
+  
+  }
+
